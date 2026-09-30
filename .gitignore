@@ -1,0 +1,133 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test / type / coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+coverage/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Node.js / Next.js
+# ---------------------------------------------------------------------------
+node_modules/
+.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/versions
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------------------
+# Environment files — never commit real configuration or secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# OAuth credentials, tokens and keys — never commit these
+# ---------------------------------------------------------------------------
+# Google/Slack OAuth client downloads contain client_id + client_secret.
+backend/credentials/
+credentials/
+# Keep the folder itself (via a placeholder) so the documented drop-in path
+# exists after a fresh clone, but never track anything inside it.
+!backend/credentials/
+backend/credentials/*
+!backend/credentials/.gitkeep
+*.client-secret.json
+google-client-secret.json
+client_secret*.json
+**/credentials/*.json
+
+# Locally generated token/key material.
+*.token.json
+tokens.json
+backend/data/.integration_key
+backend/data/.scheduler.lock
+*.pem
+*.key
+*.p12
+id_rsa*
+*.private.json
+
+# ---------------------------------------------------------------------------
+# Local databases
+# ---------------------------------------------------------------------------
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+backend/data/*
+!backend/data/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Logs, OS and editor cruft
+# ---------------------------------------------------------------------------
+*.log
+logs/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Screenshots / recordings / datasets are not part of the source
+*.mp4
+*.mov
+screenshots/
+datasets/
